@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import TestBlock from './testBlock.js';
 
@@ -6,9 +5,8 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          여기를 수정하거나 <code>src/App.js</code> 저장을 하면 리로딩 됩니다~!
         </p>
         <TestBlock></TestBlock>
         <a
@@ -17,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          배우다 리액트!
         </a>
       </header>
     </div>

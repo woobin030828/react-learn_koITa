@@ -3,7 +3,7 @@ module.exports = {
   devServer: {
     client: {
       webSocketURL: {
-        hostname: 'code-server.ideaflow.co.kr',
+        hostname: 'react-learn.ideaflow.co.kr',
         pathname: '/ws',
         protocol: 'wss',
         port: 443,
