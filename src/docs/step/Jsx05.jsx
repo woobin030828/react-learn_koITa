@@ -14,7 +14,6 @@ const Jsx05 = () => {
         <div>
             {isPass}
             {isLucky}
-            
         </div>
     );
 };
