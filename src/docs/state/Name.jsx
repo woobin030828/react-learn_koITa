@@ -1,12 +1,10 @@
 import React, { useState } from 'react';
 
 const Name = () => {
-    const [result, setResult] = useState("")
+    const [ result, setResult ] = useState("")
     const onChangeReult = (e) => {
-        
         setResult(e.target.value);
     }
-
     return (
         <div>
             <p>{result}</p>

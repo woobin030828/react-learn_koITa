@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 // result는 사용자가 입력한 결과
 
-
 const Colors = () => {
     const [result, setResult] = useState("")
     const [color, setColor] = useState("black")
+    const style = {
+        color: color
+    }
     const onChangeReult = (e) => {
         let value1 = e.target.value;
         setResult(value1);
@@ -20,9 +22,6 @@ const Colors = () => {
             setColor("blue")
         }
     }
-    const style = {
-        color: color
-    };
     return (
         <div>
             <p style={style}>{result}</p>

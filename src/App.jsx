@@ -6,30 +6,38 @@ import Jsx02 from './docs/step/Jsx02.jsx';
 import Jsx03 from './docs/step/Jsx03.jsx';
 import Jsx04 from './docs/step/Jsx04.jsx';
 import Jsx05 from './docs/step/Jsx05.jsx';
-*/
 import PropsContainer from './docs/props/PropsContainer.jsx';
 import Count from './docs/state/Count.jsx'
 import Name from './docs/state/Name.jsx'
 import Sound from './docs/state/Sound.jsx'
 import Colors from './docs/state/Colors.jsx'
+import Hobby from './docs/state/Hobby.jsx';
+import FoodContainer from './docs/map/basic/FoodContainer.jsx';
+import AttendanceContainer from './docs/map/basic/AttendanceContainer.jsx';
+*/
+import TodoContainer from './docs/map/basic/TodoContainer.jsx';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <TestBlock />
+        <TodoContainer />
         {/*
+        <AttendanceContainer />
         <Jsx01 />
         <Jsx02 />
         <Jsx03 />
         <Jsx04 />
         <Jsx05 />
-        */}
         <PropsContainer />
         <Count></Count>
         <Name />
         <Sound />
         <Colors />
+        <Hobby />
+        <FoodContainer />
+        */}
         <a
           className="App-link"
           href="https://reactjs.org"

@@ -14,6 +14,7 @@ const Count = () => {
             <button id="minus" onClick={crease}> -1 감소 </button>
         </div>
     );
+    
 };
 
 export default Count;
