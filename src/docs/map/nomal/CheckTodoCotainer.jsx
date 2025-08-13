@@ -20,10 +20,10 @@ const CheckTodoCotainer = () => {
         setTodos(todos.map((todo) => todo.id === id ? {...todo, done: !todo.done} : todo ))
     }
 
-    const result = todos.map(({id, task, done}, i) => {
+    const result = todos.map(({id, task, done}) => {
 
         return (
-            <CheckTodo id={id} task={task} done={done} handleChecked={handleChecked}/>
+            <CheckTodo key={id} id={id} task={task} done={done} handleChecked={handleChecked}/>
         )
 })
     return (

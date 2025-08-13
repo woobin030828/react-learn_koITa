@@ -1,61 +1,17 @@
-import './App.css';
-// import TestBlock from './testBlock.jsx';
-/*
-import ProductContainer from './docs/map/expert/ProductContainer';
-import LikesContainer from './docs/map/nomal/LikesContainer';
-import Jsx01 from './docs/step/Jsx01.jsx';
-import Jsx02 from './docs/step/Jsx02.jsx';
-import Jsx03 from './docs/step/Jsx03.jsx';
-import Jsx04 from './docs/step/Jsx04.jsx';
-import Jsx05 from './docs/step/Jsx05.jsx';
-import PropsContainer from './docs/props/PropsContainer.jsx';
-import Count from './docs/state/Count.jsx'
-import Name from './docs/state/Name.jsx'
-import Sound from './docs/state/Sound.jsx'
-import Colors from './docs/state/Colors.jsx'
-import Hobby from './docs/state/Hobby.jsx';
-import FoodContainer from './docs/map/basic/FoodContainer.jsx';
-import AttendanceContainer from './docs/map/basic/AttendanceContainer.jsx';
-import TodoContainer from './docs/map/basic/TodoContainer.jsx';
-import CheckTodoCotainer from './docs/map/nomal/CheckTodoCotainer.jsx';
-*/
-import RefName from './docs/ref/basic/RefName';
+
+import { ThemeProvider } from 'styled-components';
+import theme from './styles/theme';
+import GlobalStyle from './styles/global'
+import {RouterProvider} from 'react-router-dom'
+import router from './routes/router';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <RefName />
-        {/*
-        <ProductContainer/>
-        <LikesContainer/>
-        <TestBlock />
-        <CheckTodoCotainer />
-        <TodoContainer />
-        <AttendanceContainer />
-        <Jsx01 />
-        <Jsx02 />
-        <Jsx03 />
-        <Jsx04 />
-        <Jsx05 />
-        <PropsContainer />
-        <Count></Count>
-        <Name />
-        <Sound />
-        <Colors />
-        <Hobby />
-        <FoodContainer />
-        */}
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          배우다 리액트!
-        </a>
-      </header>
-    </div>
+      <ThemeProvider theme={theme}>
+        <GlobalStyle />
+        <RouterProvider router={router} />
+      </ThemeProvider>
   );
 }
 

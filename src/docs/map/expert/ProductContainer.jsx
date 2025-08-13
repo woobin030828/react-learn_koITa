@@ -38,7 +38,6 @@ const ProductContainer = () => {
   // 판매 목록에 구매할 상품이 없는 경우 "거래 불가"를 출력한다.
   // 모든 상품이 판매가 이루어졌다면 "판매 완료"를 출력한다.
   // 4. 해당 태그는 컴포넌트로 분리시킨다.
-
     const result = store.productList.map(({name, price}, i) => <Product key={i} name={name} price={price}/>) // 
     const onInput = (e) => {
         const value = e.target.value

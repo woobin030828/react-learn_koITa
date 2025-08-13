@@ -25,7 +25,7 @@ const LikesContainer = () => {
     const inputChange = (e) => {
         const value = e.target.value;
         if(e.key === 'Enter') {
-            setLikelist(...likelist, { name: value })
+            setLikelist([...likelist, { name: value }])
         } 
     }
 

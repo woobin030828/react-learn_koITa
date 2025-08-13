@@ -1,7 +1,6 @@
 import React from 'react';
 
-const CheckTodo = ({todo}) => {
-    const {id, handleChecked, task, done} = todo
+const CheckTodo = ({id, task, done, handleChecked}) => {
     return (
         <li style={{textDecoration : done ? "line-through" : ""}}>
         <input type="checkbox" onChange={() => {handleChecked(id)}} checked={done}/>

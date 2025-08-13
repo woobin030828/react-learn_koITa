@@ -28,7 +28,7 @@ const FoodContainer = () => {
     ]
 // jsx 에서의 map, jsx 문법의 태그로 변환
 
-    const result = foods.map((food, i) => <Food key={i} food={food.name} />)
+    const result = foods.map((food, i) => <Food key={i} food={food} />)
     
     return (
         <div>
