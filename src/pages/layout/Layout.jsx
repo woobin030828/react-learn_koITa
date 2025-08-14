@@ -17,6 +17,12 @@ const Layout = () => {
                 <li>
                     <Link to={"/hobby"}>취미</Link>
                 </li>
+                <li>
+                    <Link to={"/community"}>커뮤니티</Link>
+                </li>
+                <li>
+                    <Link to={"/sign-up"}>Sign Up</Link>
+                </li>
             </header>
             <main>
                 <Outlet />

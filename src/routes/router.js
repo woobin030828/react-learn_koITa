@@ -8,6 +8,8 @@ import Layout from "../pages/layout/Layout";
 import NotFound from "../pages/NotFound/NotFound";
 import PostContainer from "../pages/post/PostContainer";
 import PostContextList from "../pages/post/list/PostContextList";
+import PostContextRead from "../pages/post/read/PostContextRead";
+import SignUp from "../pages/signUp/SignUp";
 
 const router = createBrowserRouter([
     {
@@ -30,13 +32,21 @@ const router = createBrowserRouter([
             element : <PostReadContainer />
         },
         {
+            path: "/sign-up",
+            element : <SignUp />
+        },
+        {
             path: "/community",
             element: <PostContainer />,
             children : [
                 {
                     path : "/community",
                     element: <PostContextList />
-                }
+                },
+                {
+                    path : "/community/read/:id",
+                    element: <PostContextRead />
+                },
             ]
         }]
     },
